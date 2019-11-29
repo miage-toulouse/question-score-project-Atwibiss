@@ -1,6 +1,6 @@
 # MIAGe Master 1 - TP Tests 1
 
-### NOM : MAILIOT
+### NOM : MAILLIOT
 ### Prénom : Angélique 
 ### Groupe de TP : 
 - [ ] 1
