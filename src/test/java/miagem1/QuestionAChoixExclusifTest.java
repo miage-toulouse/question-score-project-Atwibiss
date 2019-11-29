@@ -17,28 +17,14 @@ import static org.junit.Assert.*;
  * @author Angélique MAILLIOT
  */
 public class QuestionAChoixExclusifTest {
-    
-    public QuestionAChoixExclusifTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
+
+
     private QuestionAChoixExclusif uneQuestion;
     
     @Before
     public void setUp() throws Exception {
         // given : un objet de type QuestionAChoixExclusif
         uneQuestion = new QuestionAChoixExclusif("un énoncé", 2);
-    }
-    
-    @After
-    public void tearDown() {
     }
 
     /**
