@@ -17,7 +17,7 @@ public class QuestionAChoixMultipleTest {
         List<Integer> indicesBonnesReponses = new ArrayList<Integer>();
         indicesBonnesReponses.add(1);
         indicesBonnesReponses.add(2);
-        questions = new QuestionAChoixMultiple("un énoncé", indicesBonnesReponses);
+        questions = new QuestionAChoixMultiple("un énoncé", indicesBonnesReponses, 2);
     }
 
     @Test
@@ -37,12 +37,12 @@ public class QuestionAChoixMultipleTest {
         //and : on demande le calcul du score
         Float resScore = questions.getScoreForIndice(indiceEtudiant);
         //then : le score obtenu est 100
-        assertEquals(new Float(50f), resScore);
+        assertEquals(new Float(50f), resScore, 0.01f);
         //when : un étudiant fourni l'indice correspondant à une mauvaise réponse
         indiceEtudiant = 3;
         //and : on demande le calcul du score
         resScore = questions.getScoreForIndice(indiceEtudiant);
         //then : le score obtenu est 0
-        assertEquals(new Float(0f), resScore);
+        assertEquals(new Float(0f), resScore, 0.001f);
     }
 }
